@@ -1,0 +1,136 @@
+* {
+    margin: opx;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+background-color: #f1f1f1;
+
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: cadetblue;
+    padding: 20px;
+    text-align: center; /* centra o texto */
+
+}
+
+header div a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    margin-left: 10px;
+     border-radius: 5px;
+     
+
+     }
+     .titulo {
+        border: none;
+        color: white;
+     }
+
+     header div a:hover {
+        background-color: aliceblue;
+        color: cadetblue;
+
+     }
+main {
+    width: 50%; /* a width define a largura do elemento */ 
+    
+    margin: 20px auto; /* o auto insere o elemento no meio da pagina */
+}
+    
+.negrito {
+    font-weight: bold; /* a letrea fica a negrito */
+} 
+
+p {
+    line-height: 30px; /* da espaco entre as linhas */
+}
+
+.janela {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+h2 {
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.texto {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+.link-detalhes {
+
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: inline-block; /* permite aplicar margem num elemento inline */
+    margin: 20px 0px;
+}
+
+
+form {
+    width: 60%;
+    margin: 20px  auto;
+}
+
+form label,
+form input,
+form textarea {
+    display: block; /* converte um elemento inline num elementoblock qued ocupa toda a linha */
+    width: 100%;
+}
+
+
+form input, /* o input e um campo do formulario para escrevermos */
+form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+form input[type=submit] {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    width: 106%;
+}
+
+footer {
+    background-color: cadetblue;
+    padding: 20px;
+    text-align: center; 
+}
+
+@media (max-width: 760px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    header div a {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+  main  {
+    width: 80%;
+  }
+  form {
+    width: 80%;
+  }
+}
